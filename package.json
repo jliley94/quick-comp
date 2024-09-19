@@ -1,18 +1,43 @@
 {
   "name": "quick-component",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Helps create a template for a new react component.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "bin": {
-    "quickComp": "./bin/index.js"
-  },
   "author": "Josh Liley",
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "https://github.com/jliley94/quick-comp"
   },
-  "license": "ISC"
+  "license": "ISC",
+  "preferGlobal": true,
+  "keywords": [
+    "cli",
+    "cli-app",
+    "files",
+    "folders",
+    "template",
+    "generate",
+    "quickComp",
+    "structure",
+    "react-files",
+    "file-generator",
+    "code-generation",
+    "react-automation",
+    "component-creator",
+    "component-generator"
+  ],
+  "bin": {
+    "quickComp": "./bin/index.js"
+  },
+  "scripts": {
+    "test": "node --trace-warnings --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "test:watch": "node --experimental-vm-modules node_modules/jest/bin/jest.js --watch"
+  },
+  "dependencies": {
+    "@inquirer/prompts": "^5.5.0",
+    "yargs": "^17.7.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
 }
