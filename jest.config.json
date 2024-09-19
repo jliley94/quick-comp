@@ -1,0 +1,5 @@
+{
+  "transform": {},
+  "roots": ["<rootDir>/test"],
+  "setupFiles": ["<rootDir>/jest.setup.js"]
+}
